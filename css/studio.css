@@ -274,7 +274,7 @@
 	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 	border-radius: 4px;
 	width: 408px;
-	height: 540px;
+	height: 584px;
 	position: relative;
 }
 
@@ -289,6 +289,11 @@
 	border-color: var(--cloud);
 	border-style: none;
 }
+.modal-container h4{
+	margin-left: 24px;
+	margin-bottom: 16px;
+}
+
 .close-btn:hover,
 .close-btn:active{
 	color:var(--white);
@@ -310,6 +315,7 @@
 	line-height: 1.16667;
 	letter-spacing: 0.04em;
 	color: var(--light-slate);
+	margin-bottom: 8px;
 
 }
 .modal-container{
@@ -327,24 +333,30 @@
   	border-radius: 4px;
 	width: 360px;
 	height: 40px;
+	margin-top: 4px;
 }
 .input-icon {
 	padding: 3px 0px;
 	width: 18px;
 	height: 24px;
 	position: absolute;
-    margin-top: 22px;
+    margin-top: 26px;
     margin-left: 16px;
 	overflow: visible;
 	fill: var(--navy-blue);
 }
-
-
-.input-icon:focus-within,  .input-comp:focus-within
-.input-icon:active, .input-comp:active {
-	color: var(--iris);
+.label:active  input, 
+.label:focus-within  input {
 	border-color: var(--iris);
+	outline: 1px solid var(--iris);
+} 
+.label:active svg , 
+.label:focus-within svg {
+	color: var(--iris);
 }
+
+
+
 .terms{
 	line-height: 1.33333;
 	text-decoration: underline;
@@ -387,12 +399,4 @@ textarea{
 	width: 360px;
 	height: 120px;
 	
-}
-.comment::placeholder{
-	font-family: var(--familly-font);
-	font-weight: 400;
-	font-size: 12px;
-	line-height: 1.16667;
-	letter-spacing: 0.04em;
-	color: var(--navy-blue-modal);
 }
