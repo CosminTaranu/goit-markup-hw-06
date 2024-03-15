@@ -48,6 +48,7 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+	border: transparent ;
 }
 
 .hero-section button:hover {
@@ -273,7 +274,7 @@
 	box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.2), 0 1px 3px 0 rgba(0, 0, 0, 0.12), 0 1px 1px 0 rgba(0, 0, 0, 0.14);
 	border-radius: 4px;
 	width: 408px;
-	height: 584px;
+	height: 540px;
 	position: relative;
 }
 
@@ -288,10 +289,110 @@
 	border-color: var(--cloud);
 	border-style: none;
 }
+.close-btn:hover,
+.close-btn:active{
+	color:var(--white);
+	background-color: var(--ocean);
 
+}
 .navbar-list a.active{
 	border-bottom: 2px solid var(--ocean);
 	color:var(--ocean);
 	padding-bottom: 14px;
 
+}
+.label-comp{
+	display: flex;
+	flex-direction: column;
+	font-family: var(--familly-font);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16667;
+	letter-spacing: 0.04em;
+	color: var(--light-slate);
+
+}
+.modal-container{
+	margin:72px 8px;
+	font-family: var(--familly-font);
+	font-weight: 500;
+	font-size: 15px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--navyblue);
+	}
+.input-comp{
+	padding-left: 38px;
+	border:1px solid rgba(46, 47, 66, 0.4);
+  	border-radius: 4px;
+	width: 360px;
+	height: 40px;
+}
+.input-icon {
+	padding: 3px 0px;
+	width: 18px;
+	height: 24px;
+	position: absolute;
+    margin-top: 22px;
+    margin-left: 16px;
+	overflow: visible;
+	fill: var(--navy-blue);
+}
+
+
+.input-icon:focus-within,  .input-comp:focus-within
+.input-icon:active, .input-comp:active {
+	color: var(--iris);
+	border-color: var(--iris);
+}
+.terms{
+	line-height: 1.33333;
+	text-decoration: underline;
+	text-decoration-skip-ink: none;
+	color: var(--iris);
+}
+.label-terms{
+	font-family: var(--familly-font);
+	font-weight: 400;
+	font-size: 11px;
+	line-height: 1.16667;
+	letter-spacing: 0.04em;
+	color: var(--light-slate);
+}
+.send-btn{
+	border:  transparent ;
+	border-radius: 4px ;
+	padding: 16px 32px;
+	width: 169px;
+	height: 56px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	background: var(--iris);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: var(--familly-font);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.04em;
+	text-align: center;
+	color: var(--white);
+	margin: 24px 96px;
+
+}
+
+textarea{
+	border: 1px solid var(--navy-blue-modal);
+	border-radius: 4px;
+	width: 360px;
+	height: 120px;
+	
+}
+.comment::placeholder{
+	font-family: var(--familly-font);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 1.16667;
+	letter-spacing: 0.04em;
+	color: var(--navy-blue-modal);
 }

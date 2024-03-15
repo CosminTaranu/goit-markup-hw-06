@@ -7,7 +7,7 @@
 	--light-slate: #8e8f99;
 	--cornflower: #e7e9fc;
 	--cloud: #f4f4fd;
-	--navy-blue-modal: rgba(46, 47, 66, 0.4);
+	--navy-blue-modal: #2e2f4266;
 	--grey: rgba(46, 47, 66, 0.7);
 	--white: #fff;
 	--dairy: #fcfcfc;
@@ -161,3 +161,53 @@ height: 80px;
 	color: var(--ocean)
 }
 
+.subscribe h3{
+	font-family: var(--font-family);
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.5;
+	letter-spacing: 0.02em;
+	color: var(--white);
+	margin-bottom: 16px;
+}
+.subscribe-email{
+	display: flex;
+}
+.subscribe-email input {
+	margin-right: 24px;
+	border: 1px solid var(--white);
+	background-color: transparent;
+	color: var(--white);
+	border-radius: 4px;
+	width: 264px;
+	height: 40px;
+	box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+	padding-left: 16px;
+}
+.subscribe-email ::placeholder{
+	color: var(--white);
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 2;
+	letter-spacing: 0.04em;
+
+}
+.button-subscribe{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-radius: 4px;
+	padding: 8px 24px;
+	width: 165px;
+	height: 40px;
+	background: var(--iris);
+	color: var(--white);
+	border: transparent;
+}
+.frame {
+	width: 24px;
+	height:20px;
+}
+
+	
